@@ -1,0 +1,17 @@
+{
+  "name": "chaitail",
+  "version": "1.0.0",
+  "description": "A lightweight utility first CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "Tailwind",
+    "ChaiTail"
+  ],
+  "author": "Vishal Patil",
+  "license": "MIT",
+  "type": "module"
+}
