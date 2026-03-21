@@ -40,7 +40,7 @@ initChai();
 
 ```html
 <div class="chai-p-20 chai-bg-blue chai-text-white chai-flex chai-justify-center">
-  Hello ChaiTail 🚀
+  Hello ChaiTail!
 </div>
 ```
 

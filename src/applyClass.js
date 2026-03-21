@@ -6,7 +6,7 @@ function parseChaiClass(cls) {
   if (parts[0] !== "chai") return null;
 
   const type = parts[1];
-  const value = parts[2];
+  const value = parts.slice(2).join("-");
 
   switch (type) {
     case "p":
@@ -25,6 +25,12 @@ function parseChaiClass(cls) {
     case "flex":
       return { display: "flex" };
 
+    case "justify":
+      return { justifyContent: value };
+
+    case "items":
+      return { alignItems: value };
+
     case "rounded":
       return { borderRadius: value + "px" };
 
@@ -34,7 +40,7 @@ function parseChaiClass(cls) {
 }
 
 export function applyClasses(element) {
-  element.classList.forEach((cls) => {
+  [...element.classList].forEach((cls) => {
     let style = ChaiCSS[cls];
 
     if (!style) {
