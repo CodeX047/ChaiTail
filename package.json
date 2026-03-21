@@ -1,6 +1,6 @@
 {
   "name": "chaitail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight utility first CSS framework",
   "main": "src/index.js",
   "scripts": {
