@@ -1,4 +1,5 @@
 import ChaiCSS from "./ChaiCSS.js";
+import TeaColors from "./teaColors.js";
 
 function parseChaiClass(cls) {
   const parts = cls.split("-");
@@ -16,7 +17,7 @@ function parseChaiClass(cls) {
       return { margin: value + "px" };
 
     case "bg":
-      return { backgroundColor: value };
+      return { backgroundColor: TeaColors[value] || value };
 
     case "text":
       if (value === "center") return { textAlign: "center" };
@@ -33,6 +34,15 @@ function parseChaiClass(cls) {
 
     case "rounded":
       return { borderRadius: value + "px" };
+
+    case "h":
+      return { height: value + "px" };
+
+    case "w":
+      return { width: value + "px" };
+
+    case "gap":
+      return {gap: value + "px"}
 
     default:
       return null;

@@ -41,7 +41,7 @@ const ChaiCSS = {
   "chai-border": { border: "1px solid black" },
   "chai-border-none": { border: "none" },
 
-  // Width / Height (basic)
+  // Width / Height
   "chai-w-full": { width: "100%" },
   "chai-h-full": { height: "100%" },
 
