@@ -4,6 +4,8 @@ A lightweight utility-first CSS engine built with JavaScript.
 
 ChaiTail lets you author utility classes directly in HTML and converts them into inline styles at runtime — no compiled CSS required.
 
+Live Demo: https://chaitail.netlify.app
+
 ---
 
 ## What’s New
