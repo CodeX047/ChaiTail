@@ -2,7 +2,15 @@
 
 A lightweight utility-first CSS engine built with JavaScript.
 
-ChaiTail allows you to style your HTML using simple class names like Tailwind — but instead of precompiled CSS, it dynamically converts classes into inline styles at runtime.
+ChaiTail lets you author utility classes directly in HTML and converts them to inline styles at runtime. There is no compiled CSS required.
+
+---
+
+## What’s New
+
+* Added `chai-h-`, `chai-w-`, `chai-gap-` utilities
+* Colors now map through `teaColors` and support named or raw values
+* `initChai()` scans the DOM automatically and applies matching `chai-` utilities
 
 ---
 
@@ -63,7 +71,7 @@ initChai();
 * `chai-p-20` → `padding: 20px`
 * `chai-m-10` → `margin: 10px`
 
-### Colors
+### Color
 
 * `chai-bg-red` → `background-color: red`
 * `chai-text-white` → `color: white`
@@ -78,7 +86,7 @@ initChai();
 
 * `chai-text-center` → `text-align: center`
 
-### Borders
+### Border
 
 * `chai-rounded-10` → `border-radius: 10px`
 
@@ -109,8 +117,11 @@ chaitail/
 ├── src/
 │   ├── index.js
 │   ├── applyClass.js
-│   └── ChaiCSS.js
+│   ├── ChaiCSS.js
+│   └── teaColors.js
 ├── demo/
+│   ├── index.html
+│   └── script.js
 └── package.json
 ```
 
